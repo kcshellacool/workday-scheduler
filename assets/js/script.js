@@ -63,7 +63,7 @@ for (let i = 8; i < 19; i++) {
     if (i < timenow) {
         document.getElementById(chooseslot).style.backgroundColor = "lightgray";
     }
-    else if (i === timenow) {
+    else if (i == timenow) {
         document.getElementById(chooseslot).style.backgroundColor = "var(--green)";
     }
     else if (i > timenow) {
