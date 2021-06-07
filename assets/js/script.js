@@ -60,14 +60,16 @@ console.log(timenow);
 
 for (let i = 8; i < 19; i++) {
     var chooseslot = "t" + i;
-    if (i < timenow) {
+
+    if (i > timenow) {
+        document.getElementById(chooseslot).style.backgroundColor = "var(--yellow)";
+    }
+    else if (i < timenow) {
         document.getElementById(chooseslot).style.backgroundColor = "lightgray";
     }
     else if (i == timenow) {
         document.getElementById(chooseslot).style.backgroundColor = "var(--green)";
     }
-    else if (i > timenow) {
-        document.getElementById(chooseslot).style.backgroundColor = "var(--yellow)";
-    }
 
+    
 }
